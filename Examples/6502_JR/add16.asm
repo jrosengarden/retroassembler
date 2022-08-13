@@ -3,7 +3,6 @@
 ;*	Modified program to be an entirely self-contained sub-routine
 ;* 10-Aug-22 (JR)
 ;*	Tested with Retroassembler & VSC
-;*  Testing git integration
 ;*
 ;*	Input Parameters:
 ;*				
