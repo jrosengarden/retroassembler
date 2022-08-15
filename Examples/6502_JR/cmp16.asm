@@ -107,6 +107,3 @@ _ovflow:
 _minuend:	.word	$0000
 _subtrah:	.word	$0000
 _retadrcmp:	.word 	$0000
-
-
-	.end

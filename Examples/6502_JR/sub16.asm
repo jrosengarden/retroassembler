@@ -107,5 +107,3 @@ _fini:	rts
 ; data
 _subtra:		.word	$0000
 _retadrs16:		.word	$0000
-
-	.end

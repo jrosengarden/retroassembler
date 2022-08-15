@@ -891,4 +891,3 @@ _fini:	rts
 _subtra:		.word	$0000
 _retadrs16:		.word	$0000
 
-	.end

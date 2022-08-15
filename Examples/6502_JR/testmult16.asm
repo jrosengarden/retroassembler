@@ -51,6 +51,5 @@ prod 	.WORD $0000,$0000
 op1	.WORD 14289
 op2	.word 41029
 
-	.include "Jeff_Lib.asm"
+	.include "mult16.asm"	; $0E00
 
-	.end

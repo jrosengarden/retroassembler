@@ -48,6 +48,5 @@ START:
 oprnd1	.word	10000
 oprnd2	.word	257		; 10000 - 257 = 9743 = $260f
 
-	.include "Jeff_Lib.asm"
+	.include "sub16.asm"	; $0F00
 
-	.end

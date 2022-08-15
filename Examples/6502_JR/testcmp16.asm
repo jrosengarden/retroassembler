@@ -39,7 +39,5 @@ START:  clc
 oprnd1:		.word	$A45D	; minuend
 oprnd2:		.word	$77E1	; subtrahend
 
-	.include "cmp16.asm"
+	.include "cmp16.asm"	; $0B00
 
-
-	.end

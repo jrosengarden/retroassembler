@@ -156,6 +156,5 @@ msg:		.text "Quantity of Prime Numbers between 0 and 40000: $"
 		
 
 
-	.include "isprime.asm"
+	.include "isprime.asm"	; $0900
 
-	.end

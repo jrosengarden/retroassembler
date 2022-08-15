@@ -422,6 +422,7 @@ _retadr:	.word 	$0000					; return address to calling program
 ;**************************************************************************/
 	; includes go here and make sure their .org's are set as indicated.
 	; which will insure no overlap amongst included subroutines
-	.include "Jeff_Lib.asm"	;various modules & addresses
 
-	.end
+	.include "div16.asm"	; $0C00
+	.include "mult16.asm"	; $0E00
+	.include "cmp16.asm"	; $0B00

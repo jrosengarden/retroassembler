@@ -438,7 +438,4 @@ _retadrf:	.word 	$0000			; return address to calling program
 ;* Code Includes Segment
 ;**************************************************************************/
 	; includes go here and make sure their .org's are set as indicated.
-	//.include "cmp16.asm"	;$1000
-	.include "Jeff_Lib.asm"	;various modules & addresses
-
-	.end
+	.include "cmp16.asm"	;$0B00

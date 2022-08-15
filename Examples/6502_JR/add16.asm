@@ -187,5 +187,3 @@ _TMP:		.word $0000,$0000	; temp storage for addition of current pair (32 bit)
 _RSLT:		.word $0000,$0000	; final result storage (32 bit)
 _retadra16:	.word $0000		; save return address from stack
 	
-	.END
-.END

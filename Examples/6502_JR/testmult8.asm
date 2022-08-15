@@ -40,6 +40,5 @@ START:  clc
 
 result .word $0000
 
-	.include "Jeff_Lib.asm"
+	.include "mult8.asm"	; $0900
 
-	.end

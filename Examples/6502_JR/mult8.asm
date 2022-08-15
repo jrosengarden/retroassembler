@@ -113,4 +113,3 @@ _factor1: 	.byte $00
 _factor2: 	.byte $00
 _retadrm8:	.byte $00,$00
 
-	.end

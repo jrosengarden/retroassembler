@@ -317,5 +317,3 @@ _srem:	 	.byte 0			; sign of remainder
 _rsltix: 	.byte 0			; index to the result
 					;	0 = quotient
 					;	2 = remainder
-
-	.end

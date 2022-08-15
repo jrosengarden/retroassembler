@@ -112,6 +112,5 @@ oprnd2:	.word	2		; divisor
 quot:	.byte	0,0		; quotient
 rem:	.byte	0,0		; remainder
 
-	.include "div16.asm"
+	.include "div16.asm"	; $0C00
 
-	.end

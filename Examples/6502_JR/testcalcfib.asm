@@ -177,4 +177,3 @@ IO_AREA		.equ	$E000
 ;Includes go here along with what each include's ORG should be
 	.include "calcfib.asm"	;$1000
 
-	.end
