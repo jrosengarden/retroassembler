@@ -23,12 +23,18 @@
 
 START:  clc
 	cld
-	lda #$08		; 1st string of 16bit numbers; MSB of address
-	pha			; push MSB onto stack in prep for call to _ADD16
-	lda #$50		; 1st string of 16bit numbers; LSB of address
-	pha			; push LSB onto stack in prep for call to _ADD16
+	;lda #$08		; 1st string of 16bit numbers; MSB of address (HARD CODED)
+	lda #>STR1		; 1st string of 16sbit numbers; MSB of address (SOFT CODED)
+	pha				; push MSB onto stack in prep for call to _ADD16
+	;lda #$50		; 1st string of 16bit numbers; LSB of address (HARD CODED)
+	LDA #<STR1		; 1st string of 16bit numbers; LSB of address (SOFT CODED)
+					; NOTE:  Much better form to use soft coding of variable
+					; 		 addresses, instead of hard coding.  This allows
+					;		 where the variable resides in memory to be a problem
+					; 		 for the assembler to deal with instead of the programmer
+	pha				; push LSB onto stack in prep for call to _ADD16
 
-	jsr _add16              ; subroutine jump to add
+	jsr _add16    	; subroutine jump to add
 
 	pla
 	sta ANSR
@@ -37,11 +43,13 @@ START:  clc
 	pla
 	STA ANSR+2
 
-        brk                    	; end program on return from subroutine
+        brk        	; end program on return from subroutine
 
 	.org $0850
 STR1:    .word $0000,$2222,$9876,$ABCD,$0200,$0300,$1000,$2000,$3000,$0005,$0001,$0000,$0000,$000,$0000,$0000,$0000,$0000,$0000,$000,$0000
 STR2:    .word $1234,$3333,$6789,$DCBA,$2000,$3000,$0100,$AAAA,$BBBB,$0006,$0001,$0000,$0000,$000,$0000,$0000,$0000,$0000,$0000,$000,$0000
 ANSR:	 .word $0000,$0000
+
+; NOTE:  The answer for all STR1 added to all STR2 = $050C81
 
 	.include "add16.asm"	; $0B00
