@@ -25,7 +25,7 @@ NOTE2:
 	.format "txt"				; set output file format as ASCII TXT file 
 	.setting "OutputTxtAddressFormatFirst","{0:x04}: "
 	.setting "OutputTxtAddressFormatNext","{0:x04}: "
-5.	See \\Mac\Dropbox\Jeff\Assembly Programming\retroassembler v2022.1\Examples\6502 for a complete example
+5.	See \\Mac\Dropbox\Jeff\Assembly Programming\retroassembler v2022.1\Examples\6502\add.asm for a complete example
 	that assembles properly so that the output file add.txt can be directly copied then pasted into the AppleWin Emulator
 
 NOTE3:
