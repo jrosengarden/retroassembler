@@ -19,6 +19,7 @@
 
 	// the following .format and .setting's allow the generated output
 	// file to be directly pasted into the AppleWin emulator
+	// NOTE:  changed "txt" to "BIN" if you want a binary executable generated
 	.format "txt"										; set output file format as ASCII TXT file 
 	.setting "OutputTxtAddressFormatFirst","{0:x04}: "	; add colon & space after address
 	.setting "OutputTxtAddressFormatNext","{0:x04}: "	; add colon & space after address
