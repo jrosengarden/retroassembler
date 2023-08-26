@@ -1,4 +1,4 @@
-Updated: 08/08/22 (JR) MAC NOTES
+    Updated: 08/08/22 (JR) MAC NOTES
 
 NOTE:
 Use the following commands to see the RetroAssembler (Visual Studio Code) Commands:
