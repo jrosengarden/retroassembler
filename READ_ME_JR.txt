@@ -17,7 +17,7 @@ NOTE2:
 3.	The Visual Studio Code RetroAssembler setting for the retroassembler path simply has "retroassembler" entered
 	into the field due to #2 above (WINDOWS ONLY)
 3a. The Visual Studio Code RetroAssembler setting for the retroassembler path has been set as follows:
-	dotnet "/users/jeffrosengarden/dropbox/jeff/assembly programming/retroassembler v2022.1/retroassembler.dll"
+	dotnet "/Volumes/MacSSHD_CloneB/Root Protected Stuff/Dropbox/Jeff/Assembly Programming/retroassembler v2022.1/retroassembler.dll"
 	(OSX ONLY)
 4.	Add the following to any 6502 assembly code if you plan to use it with the AppleWin emulator (using the paste feature):
 	// the following .format and .setting's allow the generated output
