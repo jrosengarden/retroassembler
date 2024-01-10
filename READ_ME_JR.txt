@@ -1,4 +1,3 @@
-Test 1/10/24
     Updated: 08/08/22 (JR) MAC NOTES
 
 NOTE:
