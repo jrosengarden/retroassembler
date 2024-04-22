@@ -9,7 +9,15 @@
 * Dissasemble command (with .LST listing file):	
 *	retroassembler -d -D=$0000 test6502.bin > test6502.lst 
 **************************************************************************/
-	.target "6502"				; set target processor for RetroAssembler
+;**************************************************************************/
+; RetroAssembler Specific directives
+    .target "6502"              ; set target processor for RetroAssembler
+	// the following .format and .setting's allow the generated output
+	// file to be directly pasted into the AppleWin/MicroM8 emulators
+	.format "txt"										; set output file format as ASCII TXT file 
+	.setting "OutputTxtAddressFormatFirst","{0:x04}: "	; add colon & space after address
+	.setting "OutputTxtAddressFormatNext","{0:x04}: "	; add colon & space after address
+;**************************************************************************/
 
 	.org $0030					; data segment starting at $0015
 Num1	.byte $00,$12,$13,$14,$15,$16		; dataset to work thru backwards so $00 in front
