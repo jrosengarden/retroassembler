@@ -52,4 +52,8 @@ ANSR:	 .word $0000,$0000
 
 ; NOTE:  The answer for all STR1 added to all STR2 = $050C81
 
-	.include "add16.asm"	; $0B00
+
+;	Comment out one or the other of the following lines.  Including only add16.asm will result in a
+;	smaller executable but the preference is to use the entire library.
+;	.include "add16.asm"	; $0B00				Include ONLY the sub-routine needed
+	.include "Jeff_Lib.asm"	; $0800				Include the entier Jeff_Lib.asm (which includes add16.asm)
